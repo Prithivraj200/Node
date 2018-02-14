@@ -46,6 +46,12 @@ app.get('/info',(req,res)=>{
 	});
 })
 
+app.get('/profile',(req,res)=>{
+	res.render('profile.hbs',{
+		message:data
+	});
+})
+
 app.listen(port,()=>{
 	console.log(`server is up on port ${port}`)
 });
